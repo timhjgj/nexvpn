@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXVPN</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #080e1b;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 24px 18px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.version {
+    color: #75a5ff;
+    font-size: 12px;
+}
+
+.card {
+    background: linear-gradient(145deg, #142544, #0d172a);
+    border: 1px solid #233b61;
+    border-radius: 24px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.shield {
+    font-size: 58px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 5px 0 12px;
+}
+
+.status {
+    color: #ffb45c;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    padding: 17px;
+    background: #2868ed;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(.98);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.item {
+    background: #111e34;
+    border: 1px solid #203553;
+    border-radius: 17px;
+    padding: 18px 13px;
+}
+
+.item p {
+    color: #8da3c3;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.item strong {
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    color: #647895;
+    font-size: 12px;
+    margin-top: 35px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">NEXVPN</div>
+    <div class="version">PERSONAL VPN</div>
+</header>
+
+<main>
+    <section class="card">
+        <div class="shield">🛡️</div>
+        <h1>Твой интернет.<br>Твои правила.</h1>
+        <div class="status">● VPN не подключён</div>
+        <button onclick="showMessage()">
+            Подключить VPN
+        </button>
+    </section>
+
+    <section class="info">
+        <div class="item">
+            <p>ПОДПИСКА</p>
+            <strong>Не активна</strong>
+        </div>
+
+        <div class="item">
+            <p>СЕРВЕР</p>
+            <strong>Не выбран</strong>
+        </div>
+
+        <div class="item">
+            <p>ЗАЩИТА</p>
+            <strong>Ожидание</strong>
+        </div>
+
+        <div class="item">
+            <p>АККАУНТ</p>
+            <strong>Личный</strong>
+        </div>
+    </section>
+</main>
+
+<footer>
+    NEXVPN © 2026 · Personal VPN
+</footer>
+
+<script>
+function showMessage() {
+    alert("NEXVPN: VPN-сервер пока не подключён.");
+}
+</script>
+
+</body>
+</html>
